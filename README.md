@@ -205,18 +205,3 @@ emailjs.init('YOUR_PUBLIC_KEY');  // Replace with your key
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-## Contact
-
-**Shrek Juice Centre**
-- Location: Karachi, Pakistan
-- Phone: +92 300 1234567
-- Email: hello@shrekjuice.com
-- WhatsApp: [Chat on WhatsApp](https://wa.me/923001234567)
-
-**Social Media:**
-[Instagram](https://instagram.com) | [Facebook](https://facebook.com) | [TikTok](https://tiktok.com) | [X (Twitter)](https://x.com)
-
----
-
-Made with passion for fresh juices
