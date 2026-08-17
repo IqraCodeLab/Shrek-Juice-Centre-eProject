@@ -12,7 +12,7 @@ A modern, responsive multi-page website for **Shrek Juice Centre** — a premium
 
 ## Live Demo
 
-> Open `index.html` in your browser to view the site locally.
+> Open `https://iqracodelab.github.io/Shrek-Juice-Centre-eProject/` in your browser to view the site locally.
 
 ---
 
