@@ -6,7 +6,7 @@ A modern, responsive multi-page website for **Shrek Juice Centre** — a premium
 
 ## Preview
 
-![Homepage](img/hero-home.jpg)
+![Homepage](img/home.png)
 
 ---
 
