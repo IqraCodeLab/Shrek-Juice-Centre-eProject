@@ -156,18 +156,6 @@ tailwind.config = {
 }
 ```
 
-### EmailJS
-
-EmailJS is configured in `js/home.js` for the feedback form:
-
-```javascript
-emailjs.init('YOUR_PUBLIC_KEY');  // Replace with your key
-// Service ID: service_xxxxx
-// Template ID: template_xxxxx
-```
-
----
-
 ## Known Issues
 
 - Forms (contact, catering, franchising) are client-side only — no backend submission
