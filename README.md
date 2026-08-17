@@ -156,14 +156,6 @@ tailwind.config = {
 }
 ```
 
-## Known Issues
-
-- Forms (contact, catering, franchising) are client-side only — no backend submission
-- `css/Contact.html` is an empty misplaced file
-- Franchising page filename is misspelled as `franchaising`
-- Copyright year inconsistency (2025 on homepage vs 2026 on other pages)
-
----
 
 ## Future Improvements
 
