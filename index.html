@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrek Juice Centre - Fresh & Delicious Juices</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF6B6B',secondary:'#4ECDC4'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body class="bg-white">
+<!-- Header & Navigation -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a href="#" class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<i class="ri-goblet-line text-white ri-lg"></i>
+</div>
+<span class="text-2xl font-['Pacifico'] text-primary">Shrek Juice</span>
+</a>
+<nav class="hidden md:flex items-center space-x-6">
+<a href="#" class="text-gray-800 hover:text-primary font-medium">Home</a>
+<a href="#menu" class="text-gray-800 hover:text-primary font-medium">Products & Menu</a>
+<a href="#locations" class="text-gray-800 hover:text-primary font-medium">Store Location</a>
+<a href="franchaising.html" class="text-gray-800 hover:text-primary font-medium">Franchising</a>
+<a href="catering.html" class="text-gray-800 hover:text-primary font-medium">Catering</a>
+<a href="contact.html" class="text-gray-800 hover:text-primary font-medium">Contact</a>
+<a href="#about" class="text-gray-800 hover:text-primary font-medium">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="contact.html"><button class="bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap hidden md:block">Order Now</button></a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+<a href="#" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="#menu" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Products & Menu</a>
+<a href="#locations" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Store Location</a>
+<a href="#franchising" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Franchising</a>
+<a href="#catering" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Catering</a>
+<a href="contact.html" class="text-gray-800 hover:text-primary font-medium py-2 border-b border-gray-100">Contact</a>
+<a href="#about" class="text-gray-800 hover:text-primary font-medium py-2">About Us</a>
+<a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap w-full text-center block">Order Now</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section w-full min-h-[600px] flex items-center overflow-hidden">
+<div class="container mx-auto px-4 w-full">
+<div class="w-full md:w-1/2 py-16 animate-fadeIn" style="animation-delay: 0.1s">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Fresh & Delicious <span class="text-primary">Juices</span> For Every Taste</h1>
+<p class="text-lg text-gray-600 mb-8">Discover our wide range of natural, freshly-squeezed juices, smoothies, and healthy drinks made from the finest ingredients.</p>
+<div class="flex flex-wrap gap-4">
+  <a href="#menu"><button class="bg-primary text-white px-6 py-3 rounded-button text-lg font-medium whitespace-nowrap">Explore Menu</button></a>
+      <a href="contact.html"><button class="bg-white border-2 border-primary text-primary px-6 py-3 rounded-button text-lg font-medium whitespace-nowrap">Order Online</button></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-16 featured-gradient">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12 animate-fadeIn">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Signature Drinks</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Handcrafted with love and the freshest ingredients, our signature drinks are designed to refresh, energize, and delight your taste buds.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Signature Drink 1 -->
+<div class="signature-card bg-white rounded-xl shadow-md overflow-hidden">
+<div class="h-70 overflow-hidden">
+<img src="img/lime.jpg" >
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Cherry Lime Refresher</h3>
+<p class="text-gray-600 mb-4">A zesty blend of cherry, lime, and creamy Greek yogurt for a refreshing twist.
+Tart, smooth, and irresistibly cool — the perfect summer sip!
+</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$7.99</span>
+</div>
+</div>
+</div>
+<!-- Signature Drink 2 -->
+<div class="signature-card bg-white rounded-xl shadow-md overflow-hidden">
+<div class="h-70 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20tall%20glass%20filled%20with%20a%20vibrant%20orange-red%20smoothie%2C%20topped%20with%20fresh%20berries%20and%20mint.%20The%20smoothie%20has%20a%20thick%2C%20creamy%20texture%20and%20is%20garnished%20with%20strawberry%20slices%20on%20the%20rim%20of%20the%20glass.%20Its%20placed%20on%20a%20light%20wooden%20surface%20with%20scattered%20fresh%20strawberries%2C%20blueberries%2C%20and%20raspberries%20around%20it.%20The%20background%20is%20bright%20and%20clean%20with%20soft%20natural%20lighting%20highlighting%20the%20vivid%20colors%20of%20the%20berries.&width=600&height=400&seq=berry-blast&orientation=landscape" alt="Berry Blast Smoothie" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Berry Blast</h3>
+<p class="text-gray-600 mb-4">A delicious mix of strawberries, blueberries, raspberries, and blackberries with a hint of honey.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$8.49</span>
+</div>
+</div>
+</div>
+<!-- Signature Drink 3 -->
+<div class="signature-card bg-white rounded-xl shadow-md overflow-hidden">
+<div class="h-70 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20refreshing%20tropical%20smoothie%20in%20a%20clear%20glass%20with%20a%20paper%20straw%2C%20garnished%20with%20a%20pineapple%20wedge%20and%20mint%20leaves.%20The%20smoothie%20has%20a%20bright%20yellow%20color%20with%20orange%20swirls%20and%20is%20placed%20on%20a%20light%20wooden%20surface%20with%20chunks%20of%20fresh%20mango%2C%20pineapple%20pieces%2C%20and%20passion%20fruit%20scattered%20around.%20The%20background%20is%20bright%20and%20clean%20with%20soft%20natural%20lighting%20highlighting%20the%20vibrant%20tropical%20fruits.&width=600&height=400&seq=tropical-paradise&orientation=landscape" alt="Tropical Paradise Smoothie" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Tropical Paradise</h3>
+<p class="text-gray-600 mb-4">An exotic blend of mango, pineapple, passion fruit, and coconut milk that will transport you to the tropics.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$8.99</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products & Menu Section -->
+<section id="menu" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Products & Menu</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore our extensive menu of fresh juices, smoothies, protein shakes, and seasonal specialties made with premium ingredients.</p>
+</div>
+<!-- Category Tabs -->
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+<button class="tab-button active px-4 py-2" data-category="fruit-juices">Fruit Juices</button>
+<button class="tab-button px-4 py-2" data-category="vegetable-juices">Vegetable Juices</button>
+<button class="tab-button px-4 py-2" data-category="smoothies">Smoothies</button>
+<button class="tab-button px-4 py-2" data-category="protein-shakes">Protein Shakes</button>
+<button class="tab-button px-4 py-2" data-category="winter-menu">Winter Menu</button>
+<button class="tab-button px-4 py-2" data-category="chocolate-juices">Chocolate Juices</button>
+<button class="tab-button px-4 py-2" data-category="mock-tails">Mock Tails</button>
+</div>
+<!-- Fruit Juices Category -->
+<div class="category-content active" id="fruit-juices">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Fruit Juice 1 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/orange.jpg" alt="Fresh Orange Juice" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Fresh Orange Juice</h3>
+<p class="text-gray-600 mb-4">Freshly squeezed oranges with no added sugar or preservatives.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$5.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="orange-juice">View Details</button>
+</div>
+</div>
+</div>
+<!-- Fruit Juice 2 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/watermelon.jpg" alt="Watermelon Refresher" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Watermelon Refresher</h3>
+<p class="text-gray-600 mb-4">Sweet and hydrating watermelon juice with a hint of mint.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="watermelon-refresher">View Details</button>
+</div>
+</div>
+</div>
+<!-- Fruit Juice 3 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/apple.jpg" alt="Apple Cinnamon Juice" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Apple Cinnamon Juice</h3>
+<p class="text-gray-600 mb-4">Fresh apple juice with a warm hint of cinnamon.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="apple-cinnamon">View Details</button>
+</div>
+</div>
+</div>
+<!-- Fruit Juice 4 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/pinapple.jpg" alt="Pineapple Paradise" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Pineapple Paradise</h3>
+<p class="text-gray-600 mb-4">Sweet and tangy pineapple juice that's both refreshing and nutritious.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="pineapple-paradise">View Details</button>
+</div>
+</div>
+</div>
+<!-- Fruit Juice 5 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/pome.jpg" alt="Pomegranate Power" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Pomegranate Power</h3>
+<p class="text-gray-600 mb-4">Antioxidant-rich pomegranate juice packed with nutrients.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$7.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="pomegranate-power">View Details</button>
+</div>
+</div>
+</div>
+<!-- Fruit Juice 6 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-46 overflow-hidden">
+<img src="img/citru.jpg" alt="Citrus Blast" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Citrus Blast</h3>
+<p class="text-gray-600 mb-4">A refreshing blend of orange, grapefruit, and lemon juices.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="citrus-blast">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vegetable Juices Category -->
+<div class="category-content" id="vegetable-juices">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Vegetable Juice 1 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/green.jpg" alt="Green Detox" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Green Detox</h3>
+<p class="text-gray-600 mb-4">A cleansing blend of kale, spinach, cucumber, celery, and apple.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$7.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="green-detox">View Details</button>
+</div>
+</div>
+</div>
+<!-- Vegetable Juice 2 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/carrot,jpg.jpg" alt="Carrot Ginger Zinger" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Carrot Ginger Zinger</h3>
+<p class="text-gray-600 mb-4">Sweet carrot juice with a spicy kick of ginger and a hint of orange.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="carrot-ginger">View Details</button>
+</div>
+</div>   
+</div> 
+
+<!-- Vegetable Juice 3 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/betroot.jpg" alt="Beetroot Bliss" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Beetroot Bliss</h3>
+<p class="text-gray-600 mb-4">Earthy beetroot juice with apple and lemon for a perfect balance.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$7.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="beetroot-bliss">View Details</button>
+</div>
+</div>
+</div>
+<!-- Vegetable Juice 4 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/tomato.jpg" alt="Tomato Refresher" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Tomato Refresher</h3>
+<p class="text-gray-600 mb-4">Fresh tomato juice with celery, lemon, and a dash of sea salt.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="tomato-refresher">View Details</button>
+</div>
+</div>
+</div>
+
+<!-- Vegetable Juice 5 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/veg.jpg" alt="Carrot Ginger Zinger" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Carrot Citrus Boost</h3>
+  <p class="text-gray-600 mb-4">A refreshing blend of carrots, apples, and oranges for a naturally sweet energy boost and radiant skin.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$6.78</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Carrot Citrus Boost">View Details</button>
+  </div>
+  </div>
+  </div>
+  <!-- Vegetable Juice 6 -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/veg1.jpg" alt="Carrot Ginger Zinger" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Avocado Green Punch</h3>
+  <p class="text-gray-600 mb-4">Creamy avocado blended with spinach, apple, and lemon.perfect for detox and long-lasting energy.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$7.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Avocado Green Punch">View Details</button>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<!-- Other Categories (Hidden by Default) -->
+<div class="category-content" id="smoothies">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Smoothie items would go here -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/rasbery.jpg" alt=" Purple Power Berry" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2"> Purple Power Berry</h3>
+<p class="text-gray-600 mb-4">Blueberry, raspberry & cherry yogurt blend</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$8.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Purple Power Berry">View Details</button>
+</div>
+</div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/lime.jpg" alt="Cherry Lime Refresher" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Cherry Lime Refresher</h3>
+  <p class="text-gray-600 mb-4">	Cherry, lime & Greek yogurt combo</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$6.35</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Cherry Lime Refresher">View Details</button>
+  </div>
+  </div>     
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/water.jpg" alt="Watermelon Sunrise" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Watermelon Sunrise</h3>
+  <p class="text-gray-600 mb-4">Watermelon, strawberry & banana refresher</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$8.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Watermelon Sunrise">View Details</button>
+  </div>
+  </div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/ginger.jpg" alt="Ginger Mango Berry Boost" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Ginger Mango Berry Boost</h3>
+  <p class="text-gray-600 mb-4">Mango & berry mix with a zing of ginger</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$9.89</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Ginger Mango Berry Boost">View Details</button>
+  </div>
+  </div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/berry.jpg" alt="Berry Breakfast Smoothie" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Berry Breakfast Smoothie</h3>
+  <p class="text-gray-600 mb-4">A filling blend of mixed berries, banana, oats, and almond milk.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$8.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Berry Breakfast Smoothie">View Details</button>
+  </div>
+  </div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/topical.jpg" alt="Tropical Dream Smoothie" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Tropical Dream Smoothie</h3>
+<p class="text-gray-600 mb-4">A tropical blend of mango, pineapple, banana, and coconut milk.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$8.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="tropical-dream">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="category-content" id="protein-shakes">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+<!-- Protein Shake items would go here -->
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/peanut.jpg" alt=" Peanut Butter Muscle Fuel" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2"> Peanut Butter Muscle Fuel</h3>
+<p class="text-gray-600 mb-4">Peanut butter & banana blend with 30g protein</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$9.02</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="  Peanut Butter Muscle Fuel">View Details</button>
+</div>
+</div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/stawb.jpg" alt=" Strawberry Whey Burst" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2"> Strawberry Whey Burst</h3>
+  <p class="text-gray-600 mb-4">Strawberry almond milk shake with whey protein (22g)</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$9.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Strawberry Whey Burst">View Details</button>
+  </div>
+  </div>
+  </div>  
+
+
+    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+      <div class="h-47 overflow-hidden">
+      <img src="img/mocha.jpg" alt="Mocha Energy Builde" class="w-full h-full object-cover object-top">
+      </div>
+      <div class="p-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Mocha Energy Builder</h3>
+      <p class="text-gray-600 mb-4">Coffee + chocolate + whey = 26g protein and a caffeine boost.</p>
+      <div class="flex justify-between items-center">
+      <span class="text-primary font-bold">$8.94</span>
+      <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Mocha Energy Builder">View Details</button>
+      </div>
+      </div>
+      </div>
+
+
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+    <div class="h-45 overflow-hidden">
+    <img src="img/mango.jpg" alt="Mango Recovery Shake" class="w-full h-full object-cover object-top">
+    </div>
+    <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Mango Recovery Shake</h3>
+    <p class="text-gray-600 mb-4">Mango + vanilla protein + Greek yogurt for 24g muscle support.</p>
+    <div class="flex justify-between items-center">
+    <span class="text-primary font-bold">$7.49</span>
+    <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Mango Recovery Shake">View Details</button>
+    </div>
+    </div>
+    </div>
+
+
+      <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-45 overflow-hidden">
+  <img src="img/choclate.jpg" alt="Chocolate Protein Power" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Chocolate Protein Power</h3>
+  <p class="text-gray-600 mb-4">Rich chocolate shake with 25g of protein, perfect post-workout.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$9.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Chocolate Protein Power">View Details</button>
+  </div>
+  </div>
+  </div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/vanila.jpg" alt="Vanilla Bean Protein" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Vanilla Bean Protein</h3>
+<p class="text-gray-600 mb-4">Smooth vanilla shake with banana, almond milk, and 20g of protein.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$8.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Vanilla Bean Protein">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="category-content" id="winter-menu">
+<!-- Winter Menu items would go here -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/hot.jpg" alt="Hot Spiced Apple Cider" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Hot Spiced Apple Cider</h3>
+<p class="text-gray-600 mb-4">A heartwarming winter classic, our apple juice gently simmered with aromatic spices including cinnamon sticks, whole cloves, and star anise. </p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$6.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Hot Spiced Apple Cider">View Details</button>
+</div>
+</div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/choco.jpg" alt="Hot Cocoa Hazelnut Delight" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Hot Cocoa Hazelnut Delight</h3>
+  <p class="text-gray-600 mb-4">Rich dark chocolate blended with creamy hazelnut, topped with whipped cream and a sprinkle of cocoa powder.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$6.49</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Hot Cocoa Hazelnut Delight">View Details</button>
+  </div>
+  </div>
+  </div>
+  <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+    <div class="h-47 overflow-hidden">
+    <img src="img/gingerlate.jpg" alt="Gingerbread Latte" class="w-full h-full object-cover object-top">
+    </div>
+    <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Gingerbread Latte</h3>
+    <p class="text-gray-600 mb-4">Bold espresso mixed with steamed milk, gingerbread spices, and molasses, finished with a cinnamon stick stirrer.</p>
+    <div class="flex justify-between items-center">
+    <span class="text-primary font-bold">$5.39</span>
+    <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Gingerbread Latte">View Details</button>
+    </div>
+    </div> 
+    </div> 
+    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+      <div class="h-47 overflow-hidden">
+      <img src="img/cherrycup.jpg" alt="Cranberry Orange Punch (Hot)" class="w-full h-full object-cover object-top">
+      </div>
+      <div class="p-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Cranberry Orange Punch (Hot)</h3>
+      <p class="text-gray-600 mb-4">Zesty cranberry juice simmered with orange slices, cinnamon, and star anise for a tangy-sweet winter sip.</p>
+      <div class="flex justify-between items-center">
+      <span class="text-primary font-bold">$4.29</span>
+      <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Cranberry Orange Punch (Hot)">View Details</button>
+      </div>
+      </div>
+      </div>
+      <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+        <div class="h-47 overflow-hidden">
+        <img src="img/vanillla.jpg" alt="Vanilla Chai Bliss" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Vanilla Chai Bliss</h3>
+        <p class="text-gray-600 mb-4">A cozy mix of black tea, vanilla, and aromatic chai spices, topped with frothy milk and a dusting of nutmeg.</p>
+        <div class="flex justify-between items-center">
+        <span class="text-primary font-bold">$5.49</span>
+        <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Vanilla Chai Bliss">View Details</button>
+        </div>
+        </div>
+        </div>
+        <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+          <div class="h-47 overflow-hidden">
+          <img src="img/turmaric.jpg" alt=" Turmeric Golden Milk" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2"> Turmeric Golden Milk</h3>
+          <p class="text-gray-600 mb-4">A soothing blend of turmeric, honey, ginger, and warm milk, known for its comforting and anti-inflammatory properties.</p>
+          <div class="flex justify-between items-center">
+          <span class="text-primary font-bold">$8.49</span>
+          <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Turmeric Golden Milk">View Details</button>
+          </div>
+          </div>
+          </div>
+</div>
+</div>
+<div class="category-content" id="chocolate-juices">
+<!-- Chocolate Juices items would go here -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/choclate banana.jpg" alt=" Choco Banana Blast" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2"> Choco Banana Blast</h3>
+<p class="text-gray-600 mb-4">Banana, Cocoa Powder, Chocolate Syrup, Low-Fat Milk, Honey.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$8.99</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Choco Banana Blast">View Details</button>
+</div>
+</div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/moch.jpg">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Mocha Nut Fusion</h3>
+  <p class="text-gray-600 mb-4">Espresso Shot, Dark Chocolate, Almond Milk, Crushed Walnuts, Maple Syrup, Ice</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$7.99</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Mocha Nut Fusion">View Details</button>
+  </div>
+  </div>
+  </div>
+  <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+    <div class="h-47 overflow-hidden">
+    <img src="img/avacardo.jpg" alt=" Choco Avocado Power" class="w-full h-full object-cover object-top">
+    </div>
+    <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800 mb-2"> Choco Avocado Power</h3>
+    <p class="text-gray-600 mb-4">Avocado, Cocoa Powder, Coconut Milk, Dates, Chia Seeds.</p>
+    <div class="flex justify-between items-center">
+    <span class="text-primary font-bold">$9.36</span>
+    <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id=" Choco Avocado Power">View Details</button>
+    </div>
+    </div>
+    </div>
+    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+      <div class="h-47 overflow-hidden">
+      <img src="img/bary.jpg" alt="Peanut Choco Crunch" class="w-full h-full object-cover object-top">
+      </div>
+      <div class="p-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Peanut Choco Crunch</h3>
+      <p class="text-gray-600 mb-4">Peanut Butter, Cocoa Powder, Low-Fat Milk, Crushed Peanuts, berries, honey.</p>
+      <div class="flex justify-between items-center">
+      <span class="text-primary font-bold">$6.93</span>
+      <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Peanut Choco Crunch">View Details</button>
+      </div>
+      </div>
+      </div>
+      <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+        <div class="h-47 overflow-hidden">
+        <img src="img/raschoco.jpg" alt=" Choco Berry Swirl" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-2"> Choco Berry Swirl</h3>
+        <p class="text-gray-600 mb-4">Strawberries, Cocoa Powder, Greek Yogurt, Dark Chocolate, Skim Milk, Ice Cubes</p>
+        <div class="flex justify-between items-center">
+        <span class="text-primary font-bold">$6.93</span>
+        <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Choco Berry Swir">View Details</button>
+        </div>
+        </div>
+        </div>
+        <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+          <div class="h-47 overflow-hidden">
+          <img src="img/banana.jpg" alt="Choco Banana Bliss" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Chocolate Banana Bliss</h3>
+          <p class="text-gray-600 mb-4">Creamy blend of banana, raw cacao, dates, and almond milk.</p>
+          <div class="flex justify-between items-center">
+          <span class="text-primary font-bold">$5.99</span>
+          <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Chocolate Banana Bliss">View Details</button>
+          </div>
+          </div>
+          </div>
+</div>
+</div>
+<div class="category-content" id="mock-tails">
+<!-- Mock Tails items would go here -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+<div class="h-47 overflow-hidden">
+<img src="img/cucumber.jpg" alt="Virgin Mojito" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Virgin Mojito</h3>
+<p class="text-gray-600 mb-4">Refreshing blend of lime, mint, soda water, and a touch of sweetness.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">$7.49</span>
+<button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="virgin-mojito">View Details</button>
+</div>
+</div>
+</div>
+<div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+  <div class="h-47 overflow-hidden">
+  <img src="img/sunset.jpg" alt="Tropical Sunset" class="w-full h-full object-cover object-top">
+  </div>
+  <div class="p-6">
+  <h3 class="text-xl font-bold text-gray-800 mb-2">Tropical Sunset</h3>
+  <p class="text-gray-600 mb-4">Pineapple Juice, Orange Juice, Grenadine Syrup, Lemon Juice, Ice.</p>
+  <div class="flex justify-between items-center">
+  <span class="text-primary font-bold">$6.89</span>
+  <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Tropical Sunset">View Details</button>
+  </div>
+  </div> 
+  </div> 
+  <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+    <div class="h-47 overflow-hidden">
+    <img src="img/blue.jpg" alt="Blue Lagoon" class="w-full h-full object-cover object-top">
+    </div>
+    <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Blue Lagoon</h3>
+    <p class="text-gray-600 mb-4">Blue Curacao Syrup (non-alcoholic), Lemonade, Lime Juice, Soda Water, Ice</p>
+    <div class="flex justify-between items-center">
+    <span class="text-primary font-bold">$5.49</span>
+    <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Blue Lagoon">View Details</button>
+    </div>
+    </div>
+    </div>
+    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+      <div class="h-47 overflow-hidden">
+      <img src="img/mint.jpg" alt="Strawberry Mint Fizz" class="w-full h-full object-cover object-top">
+      </div>
+      <div class="p-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Strawberry Mint Fizz</h3>
+      <p class="text-gray-600 mb-4">Fresh Strawberries, Mint Leaves, Lemon Juice, Sparkling Water, Honey, Ice</p>
+      <div class="flex justify-between items-center">
+      <span class="text-primary font-bold">$7.49</span>
+      <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Strawberry Mint Fizz">View Details</button>
+      </div>
+      </div>
+      </div>
+      <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+        <div class="h-47 overflow-hidden">
+        <img src="img/cooler.jpg" alt="Watermelon Cooler" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Watermelon Cooler</h3>
+        <p class="text-gray-600 mb-4">Watermelon Juice, Lime Juice, Basil Leaves, Honey, Ice Cubes</p>
+        <div class="flex justify-between items-center">
+        <span class="text-primary font-bold">$5.35</span>
+        <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="Watermelon Cooler">View Details</button>
+        </div>
+        </div>
+        </div>
+        <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 animate-scaleIn" style="animation-delay: 0.2s">
+          <div class="h-47 overflow-hidden">
+          <img src="img/pomi.jpg" alt="Pomegranate Sparkler" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Pomegranate Sparkler</h3>
+          <p class="text-gray-600 mb-4">Pomegranate Juice, Apple Juice, Lime Juice, Sparkling Water, Ice</p>
+          <div class="flex justify-between items-center">
+          <span class="text-primary font-bold">$6.94</span>
+          <button class="view-details-btn bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap" data-product-id="virgin-mojito">View Details</button>
+          </div>
+          </div>
+          </div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Health Tips Section -->
+<section class="py-16 health-tips-gradient">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12 animate-fadeIn">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Juice Tips & Benefits</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Discover the amazing health benefits of our fresh juices and learn how to incorporate them into your daily routine.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Tip 1 -->
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+<i class="ri-heart-pulse-line text-primary ri-2x"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Boost Your Immune System</h3>
+<p class="text-gray-600">Our citrus juices are packed with vitamin C, which helps strengthen your immune system and protect against common illnesses. Just one glass of our Orange Blast provides 100% of your daily vitamin C needs.</p>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+<i class="ri-leaf-line text-primary ri-2x"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Detoxify Your Body</h3>
+<p class="text-gray-600">Green juices are excellent for detoxification. The combination of leafy greens, cucumber, and celery helps flush out toxins and supports liver function, leaving you feeling refreshed and energized.</p>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+<i class="ri-mental-health-line text-primary ri-2x"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Improve Digestion</h3>
+<p class="text-gray-600">Pineapple and papaya juices contain natural enzymes that aid digestion and reduce bloating. Try our Tropical Enzyme blend before a meal to enhance nutrient absorption and promote gut health.</p>
+</div>
+</div>
+<!-- Tip 4 -->
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+<i class="ri-run-line text-primary ri-2x"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Enhance Athletic Performance</h3>
+<p class="text-gray-600">Beetroot juice has been shown to improve athletic performance by increasing blood flow and oxygen delivery to muscles. Our Beetroot Bliss is a favorite among athletes and fitness enthusiasts.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Beyond our delicious juices, we offer a range of services to meet your needs, from catering to franchising opportunities.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Catering Service -->
+<div id="catering" class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20beautifully%20arranged%20catering%20display%20of%20colorful%20juice%20bottles%20and%20glasses%20on%20an%20elegant%20table%20with%20fresh%20fruits%20scattered%20around.%20The%20setup%20includes%20various%20labeled%20juice%20bottles%20in%20different%20colors%2C%20elegant%20glassware%2C%20and%20decorative%20elements%20suitable%20for%20a%20high-end%20event%20or%20wedding.%20The%20background%20shows%20a%20blurred%20event%20space%20with%20soft%20lighting.&width=600&height=400&seq=catering-service&orientation=landscape" alt="Catering Services" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Catering Services</h3>
+<p class="text-gray-600 mb-4">Make your event special with our custom juice bars and catering packages. Perfect for weddings, corporate events, and parties of all sizes.</p>
+<div class="flex justify-center">
+<a href="catering.html"><button class="bg-primary text-white px-6 py-2 rounded-button whitespace-nowrap">Learn More</button></a>
+</div>
+</div>
+</div>
+<!-- Franchising -->
+<div id="franchising" class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20modern%2C%20bright%20juice%20bar%20interior%20with%20the%20Shrek%20Juice%20branding%20visible.%20The%20store%20features%20a%20clean%20counter%20with%20juice-making%20equipment%2C%20a%20display%20of%20fresh%20fruits%2C%20and%20customers%20being%20served.%20The%20interior%20has%20green%20accents%2C%20wooden%20elements%2C%20and%20professional%20lighting%20showing%20a%20successful%20franchise%20operation.&width=600&height=400&seq=franchising&orientation=landscape" alt="Franchising Opportunities" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Franchising Opportunities</h3>
+<p class="text-gray-600 mb-4">Join the Shrek Juice family with our proven business model. We provide comprehensive training, marketing support, and ongoing assistance.</p>
+<div class="flex justify-center">
+<a href="franchaising.html"><button class="bg-primary text-white px-6 py-2 rounded-button whitespace-nowrap">Learn More</button></a>
+</div>
+</div>
+</div>
+<!-- Store Locations -->
+<div id="locations" class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="h-48 overflow-hidden">
+<!-- <img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Store Locations" class="w-full h-full object-cover object-center">
+ --><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79454.4856288111!2d-0.20575761795045594!3d51.51408420661045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603b7ace5bfd9%3A0x707145a1936d0453!2sLondon%20Coffee%20%26%20Juice%20Bar!5e0!3m2!1sen!2s!4v1749686361241!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Store Locations</h3>
+<p class="text-gray-600 mb-4">Find a Shrek Juice Centre near you. We have multiple locations across the city to serve you with our fresh and delicious juices.</p>
+<div class="flex justify-center">
+ <a href="https://maps.app.goo.gl/Te55kBMo93t6YZTR9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"><button class="bg-primary text-white px-6 py-2 rounded-button whitespace-nowrap">Find Nearest Store</button></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 testimonials-gradient">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12 animate-fadeIn">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what our happy customers have to say about Shrek Juice Centre.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"I've been a regular at Shrek Juice for over a year now. Their Green Detox is my go-to morning drink, and I've noticed a significant improvement in my energy levels and overall health. The staff is always friendly and the quality is consistently excellent!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Emily Richardson</h4>
+<p class="text-gray-500 text-sm">Fitness Instructor</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Shrek Juice catered our company event last month, and it was a huge hit! The variety of options satisfied everyone, and the presentation was beautiful. The staff was professional and accommodating. We'll definitely be using their services again!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Michael Thompson</h4>
+<p class="text-gray-500 text-sm">Event Coordinator</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"As someone with dietary restrictions, finding places that cater to my needs can be challenging. Shrek Juice not only offers a wide range of options but is also knowledgeable about ingredients and always willing to make adjustments. Their Protein Power shake is perfect after my workouts!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Sophia Martinez</h4>
+<p class="text-gray-500 text-sm">Nutritionist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section id="about" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<img src="img/story.jpg" alt="About Shrek Juice Centre" class="rounded-lg shadow-md w-full">
+</div>
+<div>
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
+<p class="text-gray-600 mb-4">Shrek Juice Centre was founded in 2015 with a simple mission: to provide delicious, nutritious juices made from the freshest ingredients. What started as a small juice stand has grown into a beloved brand with multiple locations across the city.</p>
+<p class="text-gray-600 mb-4">Our commitment to quality has never wavered. We source our fruits and vegetables from local farmers whenever possible, and we never add preservatives, artificial flavors, or unnecessary sugars to our drinks.</p>
+<p class="text-gray-600 mb-4">Over the years, we've expanded our menu to include a wide variety of juices, smoothies, protein shakes, and seasonal specialties, all designed to nourish your body and delight your taste buds.</p>
+<p class="text-gray-600 mb-8">Today, Shrek Juice Centre is more than just a juice bar. We're a community of health-conscious individuals who believe that what you put into your body matters. We're proud to be a part of your wellness journey.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+<div class="stat-item">
+<div class="stat-number">10+</div>
+<p class="stat-label">Locations</p>
+</div>
+<div class="stat-item">
+<div class="stat-number">50+</div>
+<p class="stat-label">Juice Varieties</p>
+</div>
+<div class="stat-item">
+<div class="stat-number">100K+</div>
+<p class="stat-label">Happy Customers</p>
+</div>
+<div class="stat-item">
+<div class="stat-number">8</div>
+<p class="stat-label">Years of Service</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-16 newsletter-section">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Join Our Juice Community</h2>
+<p class="text-gray-600 mb-8">Subscribe to our newsletter for seasonal recipes, health tips, exclusive offers, and more!</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input type="email" class="flex-grow px-4 py-3 border-none rounded focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Enter your email">
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button text-lg font-medium whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-gray-500 text-sm mt-4">By subscribing, you agree to receive marketing emails from Shrek Juice Centre. You can unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer id="a1" class="bg-gray-800 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Company Info -->
+<div>
+<a href="#" class="flex items-center gap-2 mb-4">
+<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+<i class="ri-goblet-line text-primary ri-lg"></i>
+</div>
+<span class="text-2xl font-['Pacifico'] text-white">Shrek Juice</span>
+</a>
+<p class="text-gray-300 mb-4">Refreshing juices made from the freshest ingredients, delivered with a smile.</p>
+<div class="flex gap-4">
+<a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<a href="https://www.facebook.com/"><i class="ri-facebook-fill text-white"></i></a>
+</a>
+<a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<a href="https://www.instagram.com/accounts/login/?hl=en"><i class="ri-instagram-fill text-white"></i></a>
+</a>
+<a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<a href="https://x.com/"><i class="ri-twitter-x-fill text-white"></i></a>
+</a>
+<a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<a href="https://www.tiktok.com/en/"><i class="ri-tiktok-fill text-white"></i></a>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-lg font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+<li><a href="#menu" class="text-gray-300 hover:text-white">Products & Menu</a></li>
+<li><a href="#locations" class="text-gray-300 hover:text-white">Store Locations</a></li>
+<li><a href="#franchising" class="text-gray-300 hover:text-white">Franchising</a></li>
+<li><a href="#catering" class="text-gray-300 hover:text-white">Catering</a></li>
+<li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h3 class="text-lg font-bold mb-4">Contact Us</h3>
+<ul class="space-y-2">
+<li class="flex items-start gap-3">
+<i class="ri-map-pin-line mt-1"></i>
+<span>123 Juice Street, Healthy City, HC 12345</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-phone-line"></i>
+<span>(555) 123-4567</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-mail-line"></i>
+<span>info@shrekjuice.com</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-time-line"></i>
+<span>Mon-Sat: 8AM - 8PM, Sun: 9AM - 6PM</span>
+</li>
+</ul>
+<a href="contact.html" class="inline-flex items-center gap-2 mt-4 text-primary font-medium hover:underline">
+<i class="ri-mail-send-line"></i> Send us a message
+</a>
+</div>
+<!-- Payment Methods -->
+<div>
+<h3 class="text-lg font-bold mb-4">Payment Methods</h3>
+<div class="flex flex-wrap gap-3">
+<div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+<i class="ri-visa-fill text-blue-700 ri-lg"></i>
+</div>
+<div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+<i class="ri-mastercard-fill text-orange-500 ri-lg"></i>
+</div>
+<div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+<i class="ri-paypal-fill text-blue-600 ri-lg"></i>
+</div>
+<div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+<i class="ri-apple-fill text-gray-800 ri-lg"></i>
+</div>
+<div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+<i class="ri-google-fill text-red-500 ri-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-bold mt-6 mb-4">Download Our App</h3>
+<div class="flex gap-3">
+<a href="#" class="bg-black rounded px-3 py-2 flex items-center gap-2">
+<i class="ri-apple-fill text-white ri-lg"></i>
+<div>
+<div class="text-xs text-gray-400">Download on the</div>
+<div class="text-sm font-medium">App Store</div>
+</div>
+</a>
+<a href="#" class="bg-black rounded px-3 py-2 flex items-center gap-2">
+<i class="ri-google-play-fill text-white ri-lg"></i>
+<div>
+<div class="text-xs text-gray-400">Get it on</div>
+<div class="text-sm font-medium">Google Play</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Shrek Juice Centre. All rights reserved.</p>
+<div class="flex gap-4 text-sm text-gray-400">
+<a href="#" class="hover:text-white">Privacy Policy</a>
+<a href="#" class="hover:text-white">Terms of Service</a>
+<a href="#" class="hover:text-white">Cookie Policy</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Product Detail Modal -->
+<div id="product-modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4">
+<div class="absolute inset-0 bg-black/50" id="modal-overlay"></div>
+<div class="bg-white rounded-lg shadow-xl w-full max-w-4xl relative z-10 overflow-hidden">
+<button id="close-modal" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<i class="ri-close-line"></i>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="h-64 md:h-auto overflow-hidden">
+<img id="modal-image" src="" alt="Product Image" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 id="modal-title" class="text-2xl font-bold text-gray-800 mb-2"></h3>
+<p id="modal-description" class="text-gray-600 mb-4"
+>Our signature orange juice is made from freshly squeezed, premium oranges. Each glass
+ contains the juice of 4-5 oranges with no added sugar or preservatives. Rich in vitamin 
+ C and antioxidants, it's the perfect way to start your day.</p>
+<div class="mb-6">
+<h4 class="font-bold text-gray-700 mb-2">Nutritional Information</h4>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex justify-between">
+<span class="text-gray-600">Calories:</span>
+<span id="modal-calories" class="font-medium"></span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Protein:</span>
+<span id="modal-protein" class="font-medium"></span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Carbs:</span>
+<span id="modal-carbs" class="font-medium"></span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Sugar:</span>
+<span id="modal-sugar" class="font-medium"></span>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<h4 class="font-bold text-gray-700 mb-2">Size Options</h4>
+<div class="flex gap-3">
+<label class="custom-radio flex-1">
+<input type="radio" name="size" value="small" checked>
+<div class="border border-gray-300 rounded p-3 text-center cursor-pointer hover:border-primary">
+<div class="font-medium">Small</div>
+<div id="modal-price-small" class="text-primary font-bold"></div>
+</div>
+</label>
+<label class="custom-radio flex-1">
+<input type="radio" name="size" value="medium">
+<div class="border border-gray-300 rounded p-3 text-center cursor-pointer hover:border-primary">
+<div class="font-medium">Medium</div>
+<div id="modal-price-medium" class="text-primary font-bold"></div>
+</div>
+</label>
+<label class="custom-radio flex-1">
+<input type="radio" name="size" value="large">
+<div class="border border-gray-300 rounded p-3 text-center cursor-pointer hover:border-primary">
+<div class="font-medium">Large</div>
+<div id="modal-price-large" class="text-primary font-bold"></div>
+</div>
+</label>
+</div>
+</div>
+<div class="mb-6">
+<h4 class="font-bold text-gray-700 mb-2">Quantity</h4>
+<div class="flex items-center">
+<button id="decrease-quantity" class="w-10 h-10 border border-gray-300 rounded-l flex items-center justify-center">
+<i class="ri-subtract-line"></i>
+</button>
+<input type="number" id="quantity" value="1" min="1" class="w-16 h-10 border-t border-b border-gray-300 text-center">
+<button id="increase-quantity" class="w-10 h-10 border border-gray-300 rounded-r flex items-center justify-center">
+<i class="ri-add-line"></i>
+</button>
+</div>
+</div>
+<div class="mb-6">
+<label class="custom-checkbox">
+<input type="checkbox" id="add-ice">
+<span class="checkmark"></span>
+<span class="ml-2">Add ice</span>
+</label>
+</div>
+<div class="flex gap-4">
+<button id="add-to-cart" class="flex-1 bg-primary text-white py-3 rounded-button font-medium whitespace-nowrap">Add to Cart</button>
+<button id="buy-now" class="flex-1 bg-gray-800 text-white py-3 rounded-button font-medium whitespace-nowrap">Buy Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

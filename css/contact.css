@@ -1,0 +1,140 @@
+body{background:#f8fafc;color:#1e293b}
+
+/* ===== Hero ===== */
+.ct-hero{
+  background:linear-gradient(180deg,#fff5f5 0%,#f8fafc 100%);
+  padding:140px 0 70px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.ct-hero::before{
+  content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);
+  width:800px;height:800px;
+  background:radial-gradient(circle,rgba(255,82,82,0.06) 0%,transparent 70%);
+  border-radius:50%;
+}
+.ct-hero .container{position:relative;z-index:1}
+.ct-hero .hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,82,82,0.08);border:1px solid rgba(255,82,82,0.15);
+  color:#ff5252;padding:8px 20px;border-radius:50px;
+  font-size:0.85rem;font-weight:600;margin-bottom:20px;
+}
+.ct-hero h1{font-size:3rem;font-weight:800;color:#0f172a;line-height:1.15;margin-bottom:14px}
+.ct-hero h1 span{
+  background:linear-gradient(135deg,#ff5252,#4ECDC4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.ct-hero .hero-sub{font-size:1.1rem;color:#64748b;max-width:540px;margin:0 auto;line-height:1.8}
+@media(max-width:768px){.ct-hero{padding:120px 0 50px}.ct-hero h1{font-size:2rem}}
+
+/* ===== Contact Cards ===== */
+.contact-card{
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(0,0,0,0.05);
+  border-radius:20px;padding:24px 28px;
+  display:flex;align-items:flex-start;gap:16px;
+  transition:all 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.04);
+}
+.contact-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 36px rgba(255,82,82,0.08);
+  border-color:rgba(255,82,82,0.15);
+}
+.contact-card .cc-icon{
+  width:50px;height:50px;min-width:50px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+  transition:all 0.3s;
+}
+.contact-card:hover .cc-icon{transform:scale(1.1) rotate(-5deg)}
+.contact-card h4{font-size:0.95rem;font-weight:700;color:#0f172a;margin-bottom:3px}
+.contact-card p{font-size:0.88rem;color:#64748b;line-height:1.5}
+
+/* Social Pills */
+.social-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 20px;border-radius:50px;
+  font-size:0.85rem;font-weight:600;text-decoration:none;
+  border:1px solid rgba(0,0,0,0.06);background:#fff;color:#1e293b;
+  transition:all 0.3s;box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+.social-pill:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.social-pill.ig:hover{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;border-color:transparent}
+.social-pill.fb:hover{background:#1877f2;color:#fff;border-color:transparent}
+.social-pill.tt:hover{background:#0f0f0f;color:#fff;border-color:transparent}
+
+/* ===== Contact Form ===== */
+.ct-form{
+  background:#fff;border-radius:24px;padding:40px;
+  border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 8px 40px rgba(0,0,0,0.06);
+  position:relative;overflow:hidden;
+}
+.ct-form::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#ff5252,#4ECDC4);
+}
+.ct-form h3{font-size:1.35rem;font-weight:700;color:#0f172a;margin-bottom:4px}
+.ct-form .form-sub{font-size:0.88rem;color:#64748b;margin-bottom:28px}
+.form-group{margin-bottom:20px;position:relative}
+.form-group label{display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;padding:14px 16px;border:1.5px solid #e2e8f0;border-radius:14px;
+  font-size:0.92rem;font-family:'Poppins',sans-serif;color:#1e293b;
+  background:#f8fafc;transition:all 0.3s;outline:none;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  border-color:#ff5252;background:#fff;
+  box-shadow:0 0 0 4px rgba(255,82,82,0.06);
+}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-group select{
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+}
+.btn-submit{
+  width:100%;padding:15px;background:linear-gradient(135deg,#ff5252,#ee4444);
+  color:#fff;border:none;border-radius:14px;font-size:1rem;font-weight:700;
+  font-family:'Poppins',sans-serif;cursor:pointer;transition:all 0.3s;
+  box-shadow:0 4px 20px rgba(255,82,82,0.3);position:relative;overflow:hidden;
+}
+.btn-submit::before{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+  transition:left 0.5s;
+}
+.btn-submit:hover::before{left:100%}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,82,82,0.4)}
+
+/* ===== Map ===== */
+.map-container{
+  border-radius:24px;overflow:hidden;
+  box-shadow:0 8px 40px rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.05);
+  position:relative;
+}
+.map-container iframe{display:block;width:100%;height:400px;border:0}
+
+/* ===== FAQ ===== */
+.faq-card{
+  background:#fff;border-radius:20px;padding:28px;
+  border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 4px 20px rgba(0,0,0,0.04);
+  transition:all 0.3s;cursor:default;
+}
+.faq-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 40px rgba(255,82,82,0.08);
+  border-color:rgba(255,82,82,0.12);
+}
+.faq-card .faq-icon{
+  width:48px;height:48px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:16px;transition:all 0.3s;
+}
+.faq-card:hover .faq-icon{transform:scale(1.1)}
+.faq-card h4{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+.faq-card p{font-size:0.88rem;color:#64748b;line-height:1.65}
