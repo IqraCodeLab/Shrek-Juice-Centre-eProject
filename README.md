@@ -98,22 +98,6 @@ project/
 └── readme_image/           # Screenshots shown in this README
 ```
 
----
-
-## 🔧 Local Configuration
-
-### 📧 EmailJS Setup
-To receive emails from your Contact Form:
-1. Sign up for a free account at [EmailJS](https://www.emailjs.com/).
-2. Connect an Email Service (e.g. Gmail) and create an email template.
-3. Replace the Public Key inside [`js/home.js`](js/home.js):
-   ```javascript
-   emailjs.init('YOUR_PUBLIC_KEY');
-   ```
-4. Update the service ID and template ID in the submit handlers to match yours.
-
----
-
 ## 📝 License
 
 This project is open-source and available under the **MIT License**.
