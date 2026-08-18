@@ -1,187 +1,119 @@
-# Shrek Juice Centre
+# 🥑 Shrek Juice Centre
 
-A modern, responsive multi-page website for **Shrek Juice Centre** — a premium juice bar based in Karachi, Pakistan. The site offers online menu browsing, catering services, franchising applications, and contact functionality.
+A premium, modern, and fully responsive multi-page website for **Shrek Juice Centre** — a top-tier juice bar based in Karachi, Pakistan. 
 
----
-
-## Preview
-
-![Homepage](home.png)
+This website is designed with a vibrant, fresh, and modern aesthetic. It features a complete online menu showcasing 40+ products, interactive detailed modals with nutritional information, catering packages, franchising details, and a functional contact system.
 
 ---
 
-## Live Demo
+## 📸 Screenshots Showcase
 
-> Open `https://iqracodelab.github.io/Shrek-Juice-Centre-eProject/` in your browser to view the site locally.
+Here is a visual walk-through of the website. These screenshots demonstrate the rich styling, clean card layouts, and intuitive interface design across different pages:
 
----
+### 🏠 Home & Signature Drinks
+| Homepage Header | Signature Drinks Section |
+| :---: | :---: |
+| ![Homepage](readme_image/home.png) | ![Signature Drinks](readme_image/signature_drinks.png) |
 
-## Features
+### 🍔 Menu Grid & Item Details
+| Interactive Menu Grid | Product Detail Modal (with Nutrition & Sizes) |
+| :---: | :---: |
+| ![Menu](readme_image/menu.png) | ![Menu Detail Modal](readme_image/menu1.png) |
 
-- **Responsive Design** — Fully mobile-friendly with hamburger navigation
-- **4 Pages** — Home, Catering, Contact, Franchising
-- **40+ Products** across 7 categories (Fruit Juices, Vegetable Juices, Smoothies, Protein Shakes, Winter Menu, Chocolate Juices, Mocktails)
-- **Product Detail Modal** — Size selection, nutrition info, add-to-cart flow
-- **Interactive Tabs** — Category-based menu filtering
-- **Catering Packages** — 3 tiers (Basic Sip, Fiesta Blend, Royal Splash)
-- **Franchise Application Form** — Full inquiry with budget selection
-- **Contact Form** — With EmailJS integration for email delivery
-- **Embedded Google Maps** — Store location on Contact & Home pages
-- **Social Media Integration** — WhatsApp, Facebook, Instagram, TikTok, X
-- **Smooth Animations** — CSS keyframe transitions and hover effects
-- **Scroll-to-Top Button** — Auto-visible after scrolling
+### 🥗 About Us & Franchising Overview
+| About Us / Our Philosophy | Franchising Requirements & Benefits |
+| :---: | :---: |
+| ![About Us](readme_image/about%20us.png) | ![Franchising Overview](readme_image/franchising.png) |
 
----
+### 💼 Franchising Details & Form
+| Simple Steps to Partner | Franchising Inquiry Form |
+| :---: | :---: |
+| ![Franchise Steps](readme_image/franchising1.png) | ![Franchise Form](readme_image/franchise2.png) |
 
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| **HTML5** | Page structure |
-| **CSS3** | Custom styling |
-| **Tailwind CSS 3.4** (CDN) | Utility-first responsive layout |
-| **Vanilla JavaScript** | Interactivity & DOM manipulation |
-| **Remix Icon 4.6** (CDN) | Icon library |
-| **Google Fonts** | Pacifico + Poppins |
-| **EmailJS 4.x** (CDN) | Client-side email sending |
+### 📞 Contact Info & Interactive Maps
+| Contact Info & FAQs | Inquiry Form & Map Placement |
+| :---: | :---: |
+| ![Contact Cards](readme_image/contact.png) | ![Contact Form & Map](readme_image/contact1.png) |
 
 ---
 
-## Project Structure
+## 🚀 Live Demo / How to View
+
+To view the website on your local machine:
+1. Download or clone this repository.
+2. Double-click the [`index.html`](index.html) file to open it in your web browser.
+
+> 💡 **Tip:** If you deploy this repository to **GitHub Pages**, you can view the live interactive website directly in your browser without downloading any files!
+
+---
+
+## ✨ Features
+
+- **📱 Fully Responsive Layout** — Optimized for desktops, tablets, and mobile screens with a responsive hamburger navigation menu.
+- **✨ Vibrant & Modern UI** — Curated color palette featuring soft corals, leafy greens, and crisp layouts matching a premium juice bar theme.
+- **🍉 Extensive Menu (40+ Products)** — Grouped into 7 distinct categories (Fruit Juices, Vegetable Juices, Smoothies, Protein Shakes, Winter Menu, Chocolate Juices, Mocktails) with smooth interactive tabs.
+- **🔍 Product Detail Modals** — Clicking any menu item opens a beautiful popup displaying sizes, prices, nutritional info, ingredients, and an interactive "Add to Cart" quantity selector.
+- **🎉 Catering Packages** — Clear information on tiered catering services (Basic Sip, Fiesta Blend, Royal Splash) to book events.
+- **🏢 Franchising Application** — Detailed partnership process, pricing stats, and a dynamic application form for prospective franchise owners.
+- **📩 Functional Contact Form** — Fully integrated with **EmailJS** to send user submissions directly to the business email inbox.
+- **🗺️ Interactive Map & Socials** — Embedded Google Maps for store locations, plus fully-linked icons for WhatsApp, Facebook, Instagram, TikTok, and X.
+- **🔝 UX Improvements** — Smooth scroll-to-top button, interactive hover effects, and CSS micro-animations.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** — Semantic page structure.
+- **CSS3** — Custom layout stylings, page specific sheets, and custom animations.
+- **Tailwind CSS 3.4** (via CDN) — Utility-first responsive spacing, grids, and rapid layout design.
+- **Vanilla JavaScript** — High performance DOM manipulation for modals, tabs, active states, and cart quantities.
+- **Remix Icon 4.6** — Sleek, vector-based iconography.
+- **EmailJS SDK** — Direct client-side email dispatching.
+- **Google Fonts** — Styled using *Pacifico* (for headings/branding) and *Poppins* (for body text).
+
+---
+
+## 📂 Project Directory Structure
 
 ```
 project/
-├── index.html              # Homepage
-├── catering.html           # Catering services page
-├── contact.html            # Contact us page
-├── franchaising.html       # Franchising opportunities page
+├── index.html              # Main homepage & product menu
+├── catering.html           # Catering services and packages
+├── contact.html            # Location info, FAQs, and contact form
+├── franchaising.html       # Franchise partner benefits, stats, and form
 │
 ├── css/
-│   ├── common.css          # Shared/global styles
-│   ├── home.css            # Homepage styles
-│   ├── catering.css        # Catering page styles
-│   ├── contact.css         # Contact page styles
-│   └── franchaising.css    # Franchising page styles
+│   ├── common.css          # Global navbar, footer, and basic typography styles
+│   ├── home.css            # Styles for homepage, hero banner, tabs, and modals
+│   ├── catering.css        # Styles specific to the catering layout
+│   ├── contact.css         # Styles specific to the contact layout
+│   └── franchaising.css    # Styles specific to the franchise layout
 │
 ├── js/
-│   ├── common.js           # Shared JS (mobile menu, scroll-to-top, active nav)
-│   ├── home.js             # Homepage JS (tabs, modals, cart, ratings, EmailJS)
-│   └── catering.js         # Catering page JS (image preview)
+│   ├── common.js           # Shared utilities (mobile menu toggle, scroll-to-top)
+│   ├── home.js             # Menu tabs filtering, modal popup info, quantity handler, EmailJS
+│   └── catering.js         # Interactive features on the catering page
 │
-└── img/
-    └── (114 images — fruits, juices, vegetables, smoothies, etc.)
+├── img/                    # Optimized assets and product photography
+└── readme_image/           # Screenshots shown in this README
 ```
 
 ---
 
-## Getting Started
+## 🔧 Local Configuration
 
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Edge, Safari)
-- No build tools or package manager required
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/shrek-juice-centre.git
-
-# Navigate to the project directory
-cd shrek-juice-centre
-
-# Open in browser
-start index.html    # Windows
-open index.html     # macOS
-xdg-open index.html # Linux
-```
-
-Or simply double-click `index.html` to open it directly in your browser.
+### 📧 EmailJS Setup
+To receive emails from your Contact Form:
+1. Sign up for a free account at [EmailJS](https://www.emailjs.com/).
+2. Connect an Email Service (e.g. Gmail) and create an email template.
+3. Replace the Public Key inside [`js/home.js`](js/home.js):
+   ```javascript
+   emailjs.init('YOUR_PUBLIC_KEY');
+   ```
+4. Update the service ID and template ID in the submit handlers to match yours.
 
 ---
 
-## Pages Overview
+## 📝 License
 
-### Home (`index.html`)
-- Hero section with CTA buttons
-- Signature drinks showcase
-- Tabbed product menu (7 categories, 40+ items)
-- Product detail modal with size/quantity selection
-- Health tips section
-- Services overview with embedded map
-- Customer testimonials
-- Newsletter subscription
-- Footer with links and social media
-
-### Catering (`catering.html`)
-- Dark hero section
-- 3 catering packages with pricing
-- "Why Choose Us" features
-- Booking inquiry form
-
-### Contact (`contact.html`)
-- Contact information cards (address, phone, email, hours)
-- Social media links
-- Contact form with category selection
-- Embedded Google Map
-- FAQ section
-
-### Franchising (`franchaising.html`)
-- Investment stats (Rs. 5,00,000 fee, Rs. 15-30 Lakh total, 12-18 months ROI)
-- Partner benefits
-- 4-step franchise process
-- Application form
-
----
-
-## Configuration
-
-### Tailwind CSS
-
-Custom theme is configured inline in each HTML file:
-
-```javascript
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#FF6B6B',    // Coral Red
-        secondary: '#4ECDC4',  // Teal
-      },
-      borderRadius: {
-        button: '8px',
-      }
-    }
-  }
-}
-```
-
-
-## Future Improvements
-
-- [ ] Add backend for form submissions (Node.js/PHP)
-- [ ] Implement full shopping cart with checkout flow
-- [ ] Add product search functionality
-- [ ] Create an admin panel for menu management
-- [ ] Add loading states and error handling
-- [ ] Optimize and compress images
-- [ ] Add `.gitignore` and build tooling
-- [ ] Implement dark mode toggle
-
----
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
+This project is open-source and available under the **MIT License**.
