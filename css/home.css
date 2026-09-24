@@ -534,3 +534,248 @@ input:checked + .slider:before {
 
 /* ===== Custom Radio ===== */
 .custom-radio input[type="radio"] { display: none; }
+
+/* ===== Health Tips Cards ===== */
+.tip-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  height: 100%;
+}
+.tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(255, 107, 107, 0.15);
+  border-color: rgba(255, 107, 107, 0.18);
+}
+.tip-icon {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #FF6B6B, #ff8e53);
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.35);
+  transition: all 0.3s;
+}
+.tip-card:hover .tip-icon {
+  transform: scale(1.12) rotate(-6deg);
+}
+.tip-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+.tip-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+@media (max-width: 640px) {
+  .tip-card { align-items: flex-start; }
+  .tip-icon { width: 58px; height: 58px; min-width: 58px; font-size: 24px; }
+}
+
+/* ===== Testimonial Cards ===== */
+.testimonial-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -14px;
+  right: 18px;
+  font-family: 'Pacifico', serif;
+  font-size: 7.5rem;
+  line-height: 1;
+  color: rgba(255, 107, 107, 0.09);
+  pointer-events: none;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 52px rgba(255, 107, 107, 0.14);
+  border-color: rgba(255, 107, 107, 0.14);
+}
+.testimonial-card .stars { color: #f59e0b; font-size: 1rem; letter-spacing: 2px; }
+.testimonial-card .t-text {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.75;
+  flex: 1;
+}
+.t-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.3);
+}
+
+/* ===== Service Cards ===== */
+.service-card {
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #FF6B6B, #ffb347, #4ECDC4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px -12px rgba(255, 107, 107, 0.25);
+}
+.service-card:hover::before { opacity: 1; }
+.service-card .service-icon {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #FF6B6B;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+  transition: all 0.3s;
+}
+.service-card:hover .service-icon {
+  background: linear-gradient(135deg, #FF6B6B, #ee5a6f);
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #FF6B6B, #ff5252);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 6px 18px rgba(255, 107, 107, 0.3);
+}
+.service-link i { transition: transform 0.3s; }
+.service-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(255, 107, 107, 0.42);
+  color: #ffffff;
+}
+.service-link:hover i { transform: translateX(4px); }
+
+/* ===== About Stats ===== */
+.about-stats .stat-item {
+  background: linear-gradient(160deg, rgba(255,255,255,0.95), rgba(255,107,107,0.05));
+  border: 1px solid rgba(255, 107, 107, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.about-stats .stat-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(255, 107, 107, 0.16);
+}
+.about-stats .stat-number {
+  background: linear-gradient(135deg, #FF6B6B, #ee5a6f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Newsletter Gradient Banner ===== */
+.newsletter-card {
+  position: relative;
+  background: linear-gradient(135deg, #FF6B6B 0%, #ff8e53 55%, #4ECDC4 100%);
+  border-radius: 28px;
+  padding: 56px 32px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(255, 107, 107, 0.35);
+}
+.newsletter-card::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  right: -40px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%);
+  border-radius: 50%;
+}
+.newsletter-card::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -30px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(255,255,255,0.16), transparent 70%);
+  border-radius: 50%;
+}
+.newsletter-card > * { position: relative; z-index: 1; }
+.newsletter-card h2 { color: #ffffff; }
+.newsletter-card .newsletter-sub { color: rgba(255, 255, 255, 0.9); }
+.newsletter-card .section-eyebrow {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.28);
+}
+.newsletter-card input {
+  background: rgba(255, 255, 255, 0.96);
+  border: none !important;
+}
+.newsletter-card .subscribe-btn {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28);
+}
+.newsletter-card .subscribe-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.4);
+}
+.newsletter-card .newsletter-note { color: rgba(255, 255, 255, 0.75); }
