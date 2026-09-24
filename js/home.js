@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
       nutrition: { calories: '360 kcal', protein: '20g', carbs: '45g', sugar: '25g' },
       prices: { small: '$8.99', medium: '$10.49', large: '$11.99' }
     },
-    'hot-apple-cider': {
+    'Hot Spiced Apple Cider': {
       title: 'Hot Spiced Apple Cider',
       description: 'A warming winter favorite with cinnamon, cloves, star anise, and orange.',
       image: 'img/hot.jpg',
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
       nutrition: { calories: '280 kcal', protein: '6g', carbs: '50g', sugar: '35g' },
       prices: { small: '$7.99', medium: '$9.49', large: '$10.99' }
     },
-    'Cranberry Orange Punch (Hot)t': {
+    'Cranberry Orange Punch (Hot)': {
       title: 'Cranberry Orange Punch (Hot)',
       description: 'Zesty cranberry juice simmered with orange slices, cinnamon, and star anise.',
       image: 'img/cherrycup.jpg',
@@ -383,13 +383,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var buyNowBtn = document.getElementById('buy-now');
     if (addToCartBtn) {
       addToCartBtn.addEventListener('click', function() {
-        alert('Product added to cart!');
+        showToast('Added to cart! Checkout from the contact page.' , 'success');
         modal.classList.remove('active');
       });
     }
     if (buyNowBtn) {
       buyNowBtn.addEventListener('click', function() {
-        alert('Proceeding to checkout!');
+        showToast('Proceeding to checkout — our team will contact you!', 'info');
         modal.classList.remove('active');
       });
     }
@@ -436,8 +436,28 @@ document.addEventListener('DOMContentLoaded', function() {
     feedbackForm.addEventListener('submit', function(e) {
       e.preventDefault();
       emailjs.sendForm('service_kigvcb9', 'template_jyr9d7n', this)
-        .then(function() { alert('Feedback sent successfully!'); },
-              function(err) { alert('Sending failed. Try again.'); console.error('FAILED...', err); });
+        .then(function() {
+          showToast('Feedback sent successfully — thank you!');
+        },
+              function(err) {
+          showToast('Sending failed. Please try again.', 'error');
+          console.error('FAILED...', err);
+        });
+    });
+  }
+
+  // ===== Newsletter Form =====
+  var newsletterForm = document.getElementById('newsletter-form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var emailInput = newsletterForm.querySelector('input[type="email"]');
+      if (emailInput && emailInput.value.trim()) {
+        showToast('Subscribed! Welcome to the Shrek Juice community.');
+        newsletterForm.reset();
+      } else {
+        showToast('Please enter a valid email address.', 'error');
+      }
     });
   }
 

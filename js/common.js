@@ -46,4 +46,59 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // ===== Header shadow on scroll =====
+  var pageHeader = document.querySelector('header.premium-header, header.glass-header');
+  if (pageHeader) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 30) {
+        pageHeader.classList.add('scrolled');
+      } else {
+        pageHeader.classList.remove('scrolled');
+      }
+    });
+  }
+
+  // ===== Toast Notification Helper =====
+  window.showToast = function(message, type) {
+    type = type || 'success';
+    var icons = {
+      success: 'ri-checkbox-circle-fill',
+      error: 'ri-close-circle-fill',
+      info: 'ri-information-fill'
+    };
+    var container = document.querySelector('.toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.className = 'toast-container';
+      container.setAttribute('aria-live', 'polite');
+      document.body.appendChild(container);
+    }
+    var toast = document.createElement('div');
+    toast.className = 'toast ' + type;
+    toast.innerHTML = '<i class="' + (icons[type] || icons.info) + '"></i><span>' + message + '</span>';
+    container.appendChild(toast);
+    setTimeout(function() {
+      toast.classList.add('hide');
+      setTimeout(function() { toast.remove(); }, 300);
+    }, 2800);
+  };
+
+  // ===== Scroll Reveal =====
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if (revealEls.length > 0) {
+    if ('IntersectionObserver' in window) {
+      revealEls.forEach(function(el) { el.classList.add('reveal-hidden'); });
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('reveal-hidden');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function(el) { revealObserver.observe(el); });
+    }
+    // Fallback: if IntersectionObserver unavailable, elements stay visible.
+  }
+
 });
