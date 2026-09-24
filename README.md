@@ -1,8 +1,27 @@
 # 🥑 Shrek Juice Centre
 
-A premium, modern, and fully responsive multi-page website for **Shrek Juice Centre** — a top-tier juice bar based in Karachi, Pakistan. 
+> 🧃 A premium, modern, and fully responsive multi-page website for **Shrek Juice Centre** — a top-tier juice bar based in Karachi, Pakistan.
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-4A90D9?style=for-the-badge&logo=maildotru&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 This website is designed with a vibrant, fresh, and modern aesthetic. It features a complete online menu showcasing 40+ products, interactive detailed modals with nutritional information, catering packages, franchising details, and a functional contact system.
+
+---
+
+## 📑 Table of Contents
+
+- [📸 Screenshots Showcase](#-screenshots-showcase)
+- [🚀 Live Demo / How to View](#-live-demo--how-to-view)
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📂 Project Directory Structure](#-project-directory-structure)
+- [🔧 Local Configuration](#-local-configuration)
+- [📝 License](#-license)
 
 ---
 
@@ -31,9 +50,9 @@ Here is a visual walk-through of the website. These screenshots demonstrate the 
 | ![Franchise Steps](readme_image/franchising1.png) | ![Franchise Form](readme_image/franchise2.png) |
 
 ### 📞 Contact Info & Interactive Maps
-| Contact Info & FAQs | Inquiry Form & Map Placement |
-| :---: | :---: |
-| ![Contact Cards](readme_image/contact.png) | ![Contact Form & Map](readme_image/contact1.png) |
+| Contact Info, FAQs, Form & Map |
+| :---: |
+| ![Contact Page](readme_image/contact1.png) |
 
 ---
 
