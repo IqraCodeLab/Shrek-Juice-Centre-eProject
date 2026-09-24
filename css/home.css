@@ -907,3 +907,58 @@ input:checked + .slider:before {
   .loc-chips { grid-template-columns: 1fr; }
   .about-badge { left: 8px; }
 }
+
+/* ===== Service Card Extra Polish ===== */
+.service-card { position: relative; }
+.service-num {
+  position: absolute;
+  top: 14px;
+  left: -6px;
+  background: linear-gradient(135deg, #FF6B6B, #ee5a6f);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.35);
+  z-index: 2;
+}
+.service-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #ee5a6f;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.service-mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.service-mini span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  background: #fff7f3;
+  border: 1px solid rgba(255, 107, 107, 0.14);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.service-mini span i { color: #FF6B6B; }
+.service-card .flex.justify-center { width: 100%; }
+.service-card .flex.justify-center .service-link { width: 100%; }
